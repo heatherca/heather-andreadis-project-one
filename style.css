@@ -360,6 +360,11 @@ footer span{
   text-transform: none;
 }
 
+.foot-btm p{
+  margin: 10px;
+  font-size: 1.6rem;
+}
+
 
 
 
