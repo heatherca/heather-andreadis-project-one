@@ -253,6 +253,7 @@ header input{
 .blog{
   background-color: rgb(236,236,236);
   height: 144vh;
+  min-height: 1070px;
 }
 
 .quad{
@@ -526,6 +527,7 @@ a:hover, a:focus{
   }
   .blog{
     height: 120vh;
+    min-height: 900px;
   }
   .quad{
     height: 60vh;
@@ -732,28 +734,28 @@ a:hover, a:focus{
 
 @media(max-width: 350px){
   header{
-  height: 75vh;
+    height: 75vh;
   }
   .about-pic{
     width: 100%;
   }
   .about h2{
-  font-size: 3.4rem;
+    font-size: 3.4rem;
   }
   .in-links li{
-  font-size: 2.2rem;
+    font-size: 2.2rem;
   }
   .in-links{
-  padding: 20px 0;
+   padding: 20px 0;
   }
   .blog .pic{
-  height: auto;
+    height: auto;
   }
   .quad.post{
-  min-height: 395px;
+    min-height: 395px;
   }
   .quad{
-  min-height: 260px;
+    min-height: 260px;
   }
   .quad:first-of-type > *{
     margin-right: 5vw;
@@ -762,7 +764,7 @@ a:hover, a:focus{
     margin-left: 5vw;
   }
   .blog{
-  padding-top: 250px;
+    padding-top: 250px;
   }
   footer{
     padding-top: 20px;
