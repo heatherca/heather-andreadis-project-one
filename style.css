@@ -11,13 +11,15 @@
 /* font-family: 'Fredericka the Great', serif  ;
 font-family: 'Cormorant Garamond', serif ; */
 
-
 /* GLOBAL STYLES */
 
  html{
    font-size:62.5%;
-   /* background-color:#152D20; */
+   background-color:#152D20;
  }
+body{
+  max-width: 2000px;
+}
 
  ul {
   list-style-type: none;
@@ -61,14 +63,16 @@ p, address, footer span{
   font-style:normal;
 }
 
+
 /* HEADER  */
 
 header{
   background-image: url(./animal-land-assets/image-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   height:97vh;
-  /* NEED MIN HEIGHT  */
+  min-height: 500px;
   padding: 25px 0;
   position: relative;
 }
@@ -79,15 +83,18 @@ header{
 }
 
 .nav-main a {
-  padding-right: 20px;
+  padding-right: 23px;
+  border-radius: 2px;
+  padding-left: 1px;
 }
 
 h1{
-  font-size: 110px;
-  line-height: 107px;
+  font-size: 107px;
+  line-height: 104px;
   width: 600px;
   text-align: right;
   float: right;
+  margin-top: 90px;
 }
 
 .social{
@@ -106,7 +113,15 @@ h1{
   font-size: 2.4rem;
 }
 
+header .hamburger{
+  color:#FCFCFC;
+  font-size: 3.5rem;
+  display:none;
+}
 
+header input{
+  display: none;
+}
 
 
 /* SECTION 1 ABOUT */
@@ -119,13 +134,18 @@ h1{
 }
 
 .about-pic{
-  width: 20vw;
+  width: 25%;
   float: left;
-  margin-right: 30px;
+  margin-right: 34px;
 }
 
 .about-pic img{
   width: 100%;
+}
+
+.about-body{
+  width: calc(75% - 34px);
+  float: left;
 }
 
 .about h2{
@@ -135,16 +155,19 @@ h1{
 
 .about p{
   font-size: 1.8rem;
-  font-weight: normal;
+  font-weight: 300;
+  line-height: 2.6rem;
+  margin-bottom: 44px;
+  margin-top: 10px;
 }
 
 .about a{
   font-size: 1.6rem;
-  /* line-height: 2.9rem; */
   text-align: center;
   color:#152D20;
   background-color: #FCFCFC;
-  padding: 10px 24px;
+  padding: 12px 26px;
+  font-weight: 600;
 }
 
 
@@ -195,14 +218,14 @@ h1{
   text-align: center;
   position: relative;
   vertical-align: middle;
+  margin: 0 60px;
 }
 
 .in-links li{
-  display: inline-block;
   font-size: 3rem;
-  width: 200px;
-  vertical-align: middle;
-  margin: 0 70px;
+  width: calc(100%/3);
+  float:left;
+  vertical-align: top;
 }
 
 .in-links i{
@@ -211,8 +234,16 @@ h1{
 }
 
 .in-links h3{
-  margin: 0;
+  margin: 0 10px;
   padding-top: 20px;
+  margin-bottom: 40px;
+}
+
+.in-links li:first-of-type h3{
+  padding-top: 10px;
+}
+.in-links li:last-of-type i{
+  font-size: 6.2rem;
 }
 
 
@@ -220,7 +251,7 @@ h1{
 /* SECTION 4 BLOG */
 
 .blog{
-  background-color: rgba(21, 45, 32, 0.05);
+  background-color: rgb(236,236,236);
   height: 144vh;
 }
 
@@ -229,6 +260,7 @@ h1{
   float: left;
   display: block;
   height: 72vh;
+  min-height: 535px;
 }
 
 .quad img{
@@ -272,32 +304,31 @@ h1{
   text-align: center;
   color: white;
   background-color: #152d20;
-  padding: 10px 24px;
+  padding: 13px 27px;
 }
 
 .post p{
   padding-bottom: 30px;
+  line-height: 2.6rem;
 }
-
 
 
 /* FOOTER  */
 
 footer{
   background-color: #152D20;
-  height: 45vh;
+  height: 46vh;
+  min-height: 340px;
   position: relative;
   padding-top: 80px;
+  clear:both;
 }
-
-
 
 footer .wrapper div{
   display:block;
   float:left;
-  width: calc(100% / 3);
   height: 100%;
-  padding: 20px 0;
+  padding: 10px 0;
   
 }
 
@@ -306,13 +337,25 @@ footer li{
   padding-bottom: 5px;
 }
 
+.nav-btm{
+  width: 25%;
+  line-height: 2.2rem;
+}
+
 .email{
   display: block;
   text-align: center;
+  width: 50%;
 }
 
 .contact{
   text-align: right;
+  width: 25%;
+  line-height: 3rem;
+}
+
+.contact > *{
+  margin-left:5px;
 }
 
 .foot-btm{
@@ -326,22 +369,27 @@ footer li{
 footer h3, footer label{
   font-family: 'Cormorant Garamond', serif ; 
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: #FCFCFC;
   margin: 0;
   padding: 0;
+  padding-bottom: 10px;
 }
 
 form label{
   margin-bottom: 10px;
+  letter-spacing: 1px;
 }
 
 form .email-here{
-  padding: 5px 15px;
-  font-size: 1.6rem;
+  padding: 10px 25px;
+  font-size: 1.8rem;
   line-height: 20px;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
+  float:left;
+  margin-top: 6px;
+  width: 75%;
 }
 
 form .subscribe{
@@ -350,14 +398,18 @@ form .subscribe{
   border: none;
   font-family: 'Cormorant Garamond', serif ; 
   font-size: 1.6rem;
-  line-height: 20px;
   text-transform: uppercase;
-  margin-top: 10px;
-  padding: 5px 15px;
+  margin-top: 6px;
+  height: 46px;
+  float: left;
+  width: 25%;
+  cursor: pointer;
 }
 
 footer span{
   text-transform: none;
+  line-height: 4rem;
+  letter-spacing: 0px;
 }
 
 .foot-btm p{
@@ -365,18 +417,360 @@ footer span{
   font-size: 1.6rem;
 }
 
+footer p{
+  margin: 0;
+}
+
+/* HOVER EFFECTS  */
+
+a:hover, a:focus{
+  color: #152D20;
+  background-color: #C3D3CB;
+}
+
+.social a:hover, .social a:focus{
+  color:#C3D3CB;
+  background-color: transparent;
+}
+
+.in-links a:hover, .in-links a:focus{
+  color:#C3D3CB;
+  background-color: transparent;
+}
+
+
+/* MEDIA QUERIES  */
+
+@media(max-width:1135px){
+  .about{
+    padding: 50px 0;
+  }
+  .about h2{
+    font-size: 4rem;
+  }
+  .about p{
+    line-height: 2.2rem
+  }
+}
+
+@media(max-width: 980px){
+  .wrapper{
+    width:90vw;
+    margin: 0 auto;
+  }
+  h1{
+    margin-top: 50px;
+    font-size: 90px;
+  }
+  .about p{
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+  }
+  .friends{
+    padding: 40px 0;
+    height: 75vw;
+    min-height: 500px;
+  }
+  .in-links i{
+    font-size: 5rem;
+  }
+  .in-links li {
+    font-size: 2.5rem;
+  }
+  .quad:first-of-type > *{
+    margin-left: 5vw;
+    margin-right: 60px;
+  }
+  .quad:last-of-type >*{
+    margin-right: 5vw;
+    margin-left: 60px;
+  }
+  form .email-here {
+    float:none;
+    width: 100%;
+  }
+  form .subscribe{
+    float:none;
+    width: 100%;
+  }
+}
+
+@media(max-width: 780px){
+  .about p{
+    margin-bottom: 22px;
+  }
+  .friends h2{
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+  .friends-pics div:last-of-type{
+    display: none;
+  }
+  .friends-pics div:nth-of-type(1){
+    margin-right: 1%;
+  }
+  .friends-pics div:nth-of-type(2){
+    margin-left:1%;
+    margin-right: 0;
+  }
+  .friends-pics div{
+    width: calc(100% /2 - 1%);
+    margin-top: 40px;
+    margin-right: 1%;
+  }
+  .in-links h3{
+    margin: 0;
+  }
+  .in-links ul{
+    margin: 0;
+  }
+  .blog{
+    height: 120vh;
+  }
+  .quad{
+    height: 60vh;
+    min-height: 450px;
+  }
+  .post h2{
+    font-size: 2.8rem;
+    width: 100%;
+  }
+  .post p{
+    line-height: 2.2rem;
+    font-size: 1.6rem;
+  }
+  .quad:first-of-type > *{
+    margin-right: 30px;
+  }
+  .quad:last-of-type >*{
+    margin-left: 30px;
+  }
+  footer h3, footer label {
+    font-size: 2rem;
+  }
+  p, address, footer span {
+    font-size: 1.6rem;
+  }
+  footer{
+    padding-top: 40px;
+  }
+  form span{
+    line-height: 1.8rem;
+  }
+}
+
+@media(max-width: 600px){
+  .about{
+    height: 100%;
+  }
+  .about-pic{
+    width: 75%;
+    float:none;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .about-body{
+    width: 100%;
+    float:none;
+  }
+  .about a{
+    width: 144px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .friends{
+    height: 100%;
+    min-height: 200px;
+  }
+  .in-links{
+    padding: 40px 0px;
+    height: 100%;
+  }
+  .in-links li{
+    width: 100%;
+    float: none;
+    margin: 20px 0;
+  }
+  .in-links h3{
+    width: 200px;
+    margin: 0 auto;
+  }
+  .blog{
+    height: 100%;
+    position: relative;
+    padding-top: 400px;
+  }
+  .quad{
+    float:none;
+    height: auto;
+    min-height: 400px;
+    width: 100%;
+  }
+  .blog .pic{
+    height: 100px;
+  }
+  .quad:nth-of-type(2){
+    position: absolute;
+    top:0;
+  }
+  .quad.post{
+    height: 100%;
+    text-align: center;
+  }
+  footer{
+    height: 100%;
+  }
+  .foot-top{
+    height: 100%;
+  }
+  footer .wrapper div{
+    float:none;
+    width: 100%;
+  }
+  .foot-btm{
+    font-size: 1.6rem;
+  }
+  footer ul{
+    text-align:center;
+  }
+  footer li{
+    display: inline-block;
+    margin: 10px;
+    text-align:center;
+  }
+  footer .wrapper div:nth-of-type(3){
+    padding-bottom: 70px;
+    text-align:center;
+  }
+}
+
+@media(max-width: 420px){
+  .nav-main li{
+    text-align: center;
+    height: 100%;
+    margin: 6px 0;
+    width: 100%;
+  }
+  .nav-main li a{
+    padding: 5px 10px;
+    background-color:#152D20;
+    width: 100%;
+  }
+  .nav-main li a:hover, .nav-main li a:focus{
+    background-color: #C3D3CB;
+  }
+  .nav-main{
+    padding-top: 56px;
+    height: 0;
+    overflow:hidden;
+  }
+  .nav-main ul{
+    background-color:#152D20;
+  }
+  h1{
+    font-size: 3rem;
+    width: 60px;
+    line-height: 2.5rem;
+    text-align: left;
+    float:none;
+    position: absolute;
+    top: 10px;
+    margin-top: 20px;
+  }
+  .social{
+    position: static;
+    height: 0;
+    overflow: hidden;
+  }
+  .social ul{
+    text-align: center;
+    background-color:#152D20;
+    width: 90vw;
+    margin: 0 auto;
+  }
+  .social li{
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  header .hamburger{
+    position: absolute;
+    top:46px;
+    right: 5vw;
+    display: block;
+  }
+  header{
+    background-position: 30% top;
+    overflow-x: hidden;
+  }
+  header input{
+    position: absolute;
+    top:42px;
+    right: 4vw;
+    height: 40px;
+    width: 40px;
+    z-index: 1;
+    border:none;
+    opacity: 0;
+    display: block;
+  }
+  header input:checked ~ .nav-main{
+    height: 100%;
+    z-index: 1;
+  }
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  .friends h2{
+    width: 100%;
+  }
+  footer li{
+    margin: 5px;
+  }
+}
+
+@media(max-width: 350px){
+  header{
+  height: 75vh;
+  }
+  .about-pic{
+    width: 100%;
+  }
+  .about h2{
+  font-size: 3.4rem;
+  }
+  .in-links li{
+  font-size: 2.2rem;
+  }
+  .in-links{
+  padding: 20px 0;
+  }
+  .blog .pic{
+  height: auto;
+  }
+  .quad.post{
+  min-height: 395px;
+  }
+  .quad{
+  min-height: 260px;
+  }
+  .quad:first-of-type > *{
+    margin-right: 5vw;
+  }
+  .quad:last-of-type >*{
+    margin-left: 5vw;
+  }
+  .blog{
+  padding-top: 250px;
+  }
+  footer{
+    padding-top: 20px;
+  }
+}
 
 
 
-
-
-
-
-
-
-/* .footer{
-  clear:both;
-} */
 
 
 

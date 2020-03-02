@@ -16,15 +16,17 @@
 <body>
 
   <!-- HEADER -->
-  <header>
+  <header id="header">
     <div class="wrapper">
+      <input type="checkbox"/>
+      <i class="fas fa-bars hamburger"></i>
       <div class="nav-main">
         <nav>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#footer">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -32,18 +34,17 @@
     </div>
     <div class="social">
       <ul>
-        <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
-        <li><a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
-        <li><a href="https://snapchat.com"><i class="fab fa-snapchat-ghost"></i></a></li>
-        <li><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com" aria-label="instagram"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.facebook.com" aria-label="facebook"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="https://snapchat.com" aria-label="snapchat"><i class="fab fa-snapchat-ghost"></i></a></li>
+        <li><a href="https://twitter.com" aria-label="twitter"><i class="fab fa-twitter"></i></a></li>
       </ul>
     </div>
-
   </header>
 
   <main>
     <!-- SECTION 1-ABOUT -->
-    <section class="about">
+    <section class="about" id="about">
       <div class="wrapper clearfix">
         <div class="about-pic">
           <img src="animal-land-assets/image-6.jpg" alt="taby cat with green eyes resting on couch staring a camera">
@@ -55,7 +56,7 @@
             pulvinar tortor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla pulvinar tortor nulla
             elementum eleifend. Vestibulum consequat vestibulum felis pharetra lcutus. Quisque interdum orci quis
             convallis dapibus nulla pulvinar tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nulla
-            pulivar tortor nulla el. Lorem ipsum dolor sit amet, consecetur adipiscing elit. Nulla pulvinar tortor nulla
+            pulvinar tortor nulla el. Lorem ipsum dolor sit amet, consecetur adipiscing elit. Nulla pulvinar tortor nulla
           </p>
           <a href="#">Read More</a>
         </div>
@@ -64,7 +65,7 @@
     </section>
 
     <!-- SECTION 2- FRIENDS -->
-    <section class="friends">
+    <section class="friends" id="gallery">
       <div class="wrapper">
         <h2>Some of Our Friends</h2>
         <div class="friends-pics clearfix">
@@ -94,11 +95,11 @@
     </section>
 
     <!--SECTION 4- BLOG  -->
-    <section class="blog clearfix">
+    <section class="blog clearfix" id="blog">
       <div class="quad post">
         <div class="words">
           <h2>Fascinating Facts About Zebras</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor a element eleifend. Vestibulum
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor a elementum eleifend. Vestibulum
             consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus. Vestibulum vitae
             tincidunt sem, a blandit sem. Quisque interdum orci.</p>
           <a href="#">Read More</a>
@@ -113,7 +114,7 @@
       <div class="quad post">
         <div class="words">
             <h2>The bond between animals and humans</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor a element eleifend. Vestibulum
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor a elementum eleifend. Vestibulum
               consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus. Vestibulum vitae
               tincidunt sem, a blandit sem. Quisque interdum orci.</p>
             <a href="#">Read More</a>
@@ -122,30 +123,30 @@
     </section>
   </main>
   <!-- FOOTER -->
-  <footer>
+  <footer id="footer">
     <div class="foot-top">
       <div class="wrapper clearfix">
         <div class="nav-btm">
           <nav>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Gallery</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#header">Home</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#footer">Contact</a></li>
             </ul>
           </nav>
         </div>
         <div class="email">
-          <form action="#" method="#" class="myForm" name="myForm">
-            <label for="yourEmail">Stay updated <br/><span>Subscribe to our newsletter to stay updated.</span></label>
-            <input class="email-here" type="email" id="yourEmail" placeholder="email address">
+          <form action="#" method="#" class="my-form" name="my-form">
+            <label for="your-email">Stay updated <br/><span>Subscribe to our newsletter to stay updated.</span></label>
+            <input class="email-here" type="email" id="your-email" placeholder="email address">
             <input class="subscribe" type="submit" value="Subscribe">
           </form>
         </div>
         <div class="contact">
           <h3>Contact</h3>
-          <address>info@email.com | 123-456-7890</address>
-          <p>123 some road, Toronto, ON</p>
+          <address>info@email.com | 123 - 456 - 7890</address>
+          <p>123 some road,  Toronto, ON</p>
           <p>A5A 5A5, Canada</p>
         </div>
       </div>
